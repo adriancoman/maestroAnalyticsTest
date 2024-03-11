@@ -1,0 +1,8 @@
+appId: com.lotusss.analytics
+---
+- launchApp
+- tapOn: Email
+- inputText: adrian
+- tapOn: Password
+- inputText: "secret"
+- tapOn: Login
