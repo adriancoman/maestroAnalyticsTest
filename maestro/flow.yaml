@@ -1,0 +1,14 @@
+appId: com.lotusss.analytics
+---
+- launchApp
+- runScript: "generateEmail.js"
+- evalScript: ${const emailToUse = output.email}
+- tapOn: Email
+- inputText: ${emailToUse}
+- tapOn: Password
+- inputText: "secret"
+- tapOn: Login
+- runScript:
+   file: fetchAnalyticsData.js
+   env:
+     email: ${emailToUse}

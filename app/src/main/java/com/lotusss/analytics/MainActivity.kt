@@ -9,6 +9,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.lotusss.analytics.login.LoginScreen
+import com.lotusss.analytics.login.LoginViewModel
 import com.lotusss.analytics.ui.theme.AnalyticsTestingTheme
 
 class MainActivity : ComponentActivity() {
@@ -26,7 +27,7 @@ class MainActivity : ComponentActivity() {
         val navController = rememberNavController()
         NavHost(navController = navController, startDestination = "login") {
             composable("login") {
-                LoginScreen(navController)
+                LoginScreen(navController, LoginViewModel())
             }
             composable("dashboard") {
                 DashboardScreen()

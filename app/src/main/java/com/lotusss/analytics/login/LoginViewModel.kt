@@ -9,8 +9,7 @@ import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.asStateFlow
 import kotlinx.coroutines.launch
 
-class LoginViewModel(
-) : ViewModel() {
+class LoginViewModel: ViewModel() {
 
     // Navigation event
     private var _navigateToDestination = mutableStateOf(false)
