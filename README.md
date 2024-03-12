@@ -1,6 +1,9 @@
 # Analytics testing
 This is the sample repo for a medium article I'm writing about how to use UI automation frameworks to validate that your analytics data is correct.
-The gist of it is that since you already have UI automation tests running, you might as well use them to validate that the analytics data is correct, and that it's not being affected by changes in your app.
+The gist of it is that since you already have UI automation tests running, you might as well use them to validate that the analytics data is correct and that it's not being affected by changes in your app.
+
+This is structured to show how it would look like in an Android project, but it would be similar no matter the platform.
+You can find the UI framework in the `maestro` folder and the sample app in `app/src/main/java/com/lotusss/analytics`.
 
 ## Prerequisites
 I'm using Maestro as the UI automation framework for this project but feel free to use any other framework you want. You can find more information about Maestro in the following link: https://maestro.mobile.dev/
